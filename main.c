@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 char text[] = "Hello";
 
@@ -17,12 +17,12 @@ void ReverseString(char *text)
     
     printf("end\n");
     printf("wartosc cnt = %i\n", cnt);
-    printf("text = %s\n", text);
+    printf("text = %s", text);
     
-    for(cnt=cnt-1; cnt>=0; cnt--)
+    for(cnt; cnt>=0; cnt--)
     {
-        printf("cnt = %i\n", cnt);
-        printf("%i\n", text[cnt]);
+        //printf("cnt = %i\n", cnt);
+        printf("%s\n", text--);
     }
     
 }
