@@ -4,7 +4,7 @@ char txt[] = "PUT IN\nPARCEL";
 
 void replaceChr(char *txt)
 {
-	//char cnt=0;
+	char cnt=0;
 	
 	while(*txt != '\0')
 	{
@@ -12,11 +12,11 @@ void replaceChr(char *txt)
 		printf("przed zamiana %s\n", txt);
 		printf(" txt: %s\n", txt);
 	
-		if(txt == "\n")
+		if(txt[cnt] == '\n')
 		{		 
-			txt=" ";
+			txt[cnt]=' ';
 		}
-		//cnt++;
+		cnt++;
 		txt++;
 	}
 	printf("tekst %s\n", txt);
